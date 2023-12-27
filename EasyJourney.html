@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Journey</title>
+
+    <link rel="stylesheet" href="css/style1.css" />
+  </head>
+  <body>
+    <!--header section starts-->
+    <header>
+      <a href="#" class="logo"><span>E</span>asy Journey</a>
+
+      <nav class="navbar">
+        <a href="#home">Book Ticket</a>
+        <a href="#book">Search Trains</a>
+        <a href="#travelspots">Travel Spots</a>
+      </nav>
+    </header>
+    <!--header section ends-->
+
+    <!--home section starts-->
+    <section class="home" id="home">
+      <div class="content">
+        <h3>Going somewhere?</h3>
+        <p>get your tickets booked and begin the Journey</p>
+        <a href="https://www.irctc.co.in/nget/train-search" class="btn"
+          >Book Now</a>
+      </div>
+
+      <div class="controls">
+        <span class="vid-btn active" data-src="signupvideo.mp4"></span>
+        <span class="vid-btn" data-src="signupvideo2.mp4"></span>
+      </div>
+
+      <div class="video-container">
+        <video
+          src="signupvideo.mp4"
+          id="video-slider"
+          loop
+          autoplay
+          muted
+        ></video>
+      </div>
+    </section>
+    <!--home section ends-->
+
+    <!--book section starts-->
+    <section class="book" id="book">
+      <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+        <span>!</span>
+      </h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="images/trainpic.jpg" alt="" />
+        </div>
+
+        <form>
+          <div class="inputBox">
+            <h3>From</h3>
+            <input type="text" id="depart" placeholder="place name" />
+          </div>
+          <div class="inputBox">
+            <h3>To</h3>
+            <input type="text" id="arrival" placeholder="place name" />
+          </div>
+          <div class="inputBox">
+            <h3>On Date</h3>
+            <input id="day" type="date" />
+          </div>
+        </form>
+        <button id="myBtn" class="btn" type="submit" onclick="getData()">search</button>
+      </div>
+    </section>
+    <div id="content"></div>
+    <!--book section ends-->
+
+    <!--travel spots section starts-->
+    <section class="travelspots" id="travelspots">
+      <h1 class="headingn"><span>DESTINATION</span></h1>
+      <div class="row">
+        <div id="slideshow">
+          <img src="images/image1.jpg" id="slideimage" />
+        </div>
+        <form action="">
+          <div class="inputBox">
+            <h3>Destination</h3>
+            <input
+              type="text"
+              id="textbox"
+              placeholder="Enter your tourist place here"
+            />
+          </div>
+        </form>
+        <button type="submit" class="btn" id="search_form">Search</button>
+      </div>
+    </section>
+    <div id="info">
+      <div id="list"></div>
+      <div id="poi"></div>
+    </div>
+    <input type="submit" class="btn" id="next_button" value="Next" />
+    <!--travel spots section ends-->
+
+    <!--videobtn js file-->
+    <script src="js files/videobtn.js"></script>
+    <!--images js file -->
+    <script src="js files/images.js"></script>
+  </body>
+
+  <!--attached js files for APIs-->
+  <script src="./api.js"></script>
+  <script src="./geoapi.js"></script>
+</html>

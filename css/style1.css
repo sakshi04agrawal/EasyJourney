@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap');
+
+:root{
+    --orange:#ffa500; 
+}
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--orange);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    /* overflow-y: scroll;
+    scroll-snap-type: y mandatory; */
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span{
+    font-size: 3.5rem;
+    background: rgba(255, 165, 0,.2);
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+}
+
+.heading span.space{
+    background: none;
+}
+
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: var(--orange);
+    color: #fff;
+    padding: .3rem 3rem;
+    border: .5rem solid var(--orange);
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: rgba(255, 165, 0,.2);
+    color: var(--orange);
+}
+
+header{
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    background-color: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+.logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.logo span{
+    color: var(--orange);
+}
+
+.navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin:0 .8rem;
+}
+
+.navbar a:hover{
+    color:var(--orange);
+}
+
+body{
+    height: 200rem;
+}
+    
+.home{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+
+.home .content{
+    text-align: center;
+}
+
+.home .content h3{
+    font-size: 4.5rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+
+.home .content p{
+    font-size: 2.5rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+
+.home .video-container video{
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .controls{
+    padding: 1rem;
+    border-radius: 5rem;
+    background: rgba(0,0,0,.7);
+    top: 10rem;
+    position: relative;
+}
+
+.home .controls .vid-btn{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 .5rem;
+}
+
+.home .controls .vid-btn.active{
+    background: var(--orange);
+}
+
+.book{
+    background-color: #c7f3ec;
+}
+
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.book .row .image{
+    flex: 1 1 40rem;
+}
+
+.book .row .image img{
+    width: 100%;
+}
+
+.book .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background-color:aliceblue;
+}
+
+.book .row form .inputBox{
+    padding: .5rem 0;
+    background-color: aliceblue;
+}
+
+.book .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    border: .3rem solid rgba(0,0,0,.1);
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    background-color: aliceblue;
+}
+
+.book .row form .inputBox h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666;
+    justify-content: center;
+}
+
+.user{
+    background-color: #e69572;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: auto;
+    align-items: center;
+}
+
+.user p{
+    font-size: 20px;
+}
+
+.travelspots .headingn{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.travelspots .headingn span{
+    font-size: 3.5rem;
+    background: rgba(195, 33, 155, 0.32);
+    color: var(--green);
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+}
+
+.travelspots #slideshow{
+    flex: 1 1 40rem;
+}
+
+.travelspots #slideshow img{
+    width: 100%;
+    border-style: dashed;
+    border-color: white;
+}
+
+
+.travelspots{
+    height: auto;
+    width: auto; 
+    background-color: rgb(153, 64, 204);
+}
+
+.travelspots .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.travelspots .row form{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    background-color:aliceblue;
+}
+
+.travelspots .row form .inputBox{
+    padding: .5rem 0;
+    background-color: aliceblue;
+}
+
+.travelspots .row form .inputBox input{
+    width: 100%;
+    padding: 1rem;
+    border: .3rem solid rgba(0,0,0,.1);
+    font-size: 1.7rem;
+    color: #333;
+    text-transform: none;
+    background-color: aliceblue;
+}
+
+.travelspots .row form .inputBox h3{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #666;
+    justify-content: center;
+}
+
+#info{
+    background-color: #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#info #list{
+    justify-content: left;
+    font-size: large;
+    background-color: #1d6ecb;
+    width: fit-content;
+    height: auto;
+
+}
+
+#info #poi{
+    justify-content: right;
+    background-color: rgb(237, 211, 159);
+    font-size: large;
+    width: fit-content;
+    border-style: double;
+    border-color: brown;
+}
+
+#info #poi img{
+    border-style: double;
+    border-color: olive;
+}
+
+.bag{
+    background-color: #9bbfe8;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.bag .list-group-item-heading{
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
+}

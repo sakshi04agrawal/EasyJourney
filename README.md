@@ -9,6 +9,8 @@
 
 ## Overview
 Welcome to the Easy Journey Website! This platform provides users with a seamless experience for booking train tickets, viewing available trains on different dates, and exploring popular places to visit at their destination. The website is designed to be user-friendly and informative, catering to all your travel planning needs in one place.
+  ![OverviewPic1](https://github.com/sakshi04agrawal/EasyJourney/assets/146064685/33cc30ca-899e-40f2-b223-371410a6a778)
+
 ###### Its features include:
 1. Firebase authentication with **password of at least 6 characters length**.
 1. **Redirecting to a train booking website** for easily booking tickets.

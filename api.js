@@ -10,7 +10,7 @@ function getData() {
       "&to=" +
       to +
       "&date=" +
-      date
+      date,  {mode: 'no-cors'}
   )
     .then((response) => response.json())
     .then((data) => {

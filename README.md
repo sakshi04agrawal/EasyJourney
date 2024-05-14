@@ -13,7 +13,7 @@ Welcome to the Train Booking Website! This platform provides users with a seamle
 1. **Redirecting to a train booking website** for easily booking tickets.
 2. **Providing info abotut trains available on a particular date from source to destination.**
   Source and destination names to be entered in the form of their respective station code, for ex- NDLS for New Delhi.
-  ![OverviewPic](
+  ![OverviewPic2](https://github.com/sakshi04agrawal/EasyJourney/assets/146064685/7997cc72-2a4a-4d4a-8d28-e7be15913ad3)
 3. **Display of places to visit at searched destination** and nearby areas with their details.
 
 ## Technologies Used
